@@ -1,0 +1,21 @@
+<div class="flex items-center justify-center gap-4 h-10">
+  <input
+    type="text"
+    placeholder="nome"
+    value={{@user.name}}
+    {{on "input" @changeInput}}
+    class="w-full border-none outline-none py-2 px-4 rounded-md"
+  />
+
+  {{#if @user}}
+    <button
+      {{on "click" @updateUser}}
+      class="flex items-center justify-center h-10 px-8 rounded-md text-white bg-emerald-500"
+    >Editar</button>
+  {{else}}
+    <button
+      {{on "click" @createUser}}
+      class="flex items-center justify-center h-10 px-8 rounded-md text-white bg-emerald-500"
+    >Adicionar</button>
+  {{/if}}
+</div>

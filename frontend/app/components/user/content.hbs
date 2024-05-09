@@ -1,0 +1,13 @@
+<Layout>
+  <Header
+    @user={{this.selectedUser}}
+    @createUser={{this.createUser}}
+    @updateUser={{this.updateUser}}
+    @changeInput={{this.setInputValue}}
+  />
+  <UserList
+    @users={{this.users}}
+    @selectUser={{this.selectUser}}
+    @deleteUser={{this.deleteUser}}
+  />
+</Layout>
