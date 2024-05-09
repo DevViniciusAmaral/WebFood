@@ -82,4 +82,5 @@ Execute o projeto:
 yarn start
 ```
 
-Agora é só abrir o navegador com a url que foi disponibilizada.
+Agora é só abrir o navegador com a url que foi disponibilizada. Será algo semelhante a:
+`http://localhost:4200/`
